@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dae467f327a04387bfb70356b570f1f2" Name="Diagram1" ZoomLevel="67">
+        <EntityTypeShape EntityType="TalentSteenModel.Country" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TalentSteenModel.CVCertification" Width="1.5" PointX="8.25" PointY="13.375" />
+        <EntityTypeShape EntityType="TalentSteenModel.CVExperience" Width="1.5" PointX="11.25" PointY="8.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.CVSearchTag" Width="1.5" PointX="8.25" PointY="9.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.Employer" Width="1.5" PointX="3" PointY="8.875" />
+        <EntityTypeShape EntityType="TalentSteenModel.EmployerMembershipLevel" Width="1.5" PointX="0.75" PointY="25.375" />
+        <EntityTypeShape EntityType="TalentSteenModel.EmployerStatus" Width="1.5" PointX="0.75" PointY="23.125" />
+        <EntityTypeShape EntityType="TalentSteenModel.EmployerUser" Width="1.5" PointX="8.25" PointY="6.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.EmploymentType" Width="1.5" PointX="9" PointY="26.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.FunctionalArea" Width="1.5" PointX="3" PointY="17" />
+        <EntityTypeShape EntityType="TalentSteenModel.Gender" Width="1.5" PointX="3.75" PointY="20.125" />
+        <EntityTypeShape EntityType="TalentSteenModel.IndustryType" Width="1.5" PointX="3" PointY="14" />
+        <EntityTypeShape EntityType="TalentSteenModel.JobStatus" Width="1.5" PointX="9" PointY="24.375" />
+        <EntityTypeShape EntityType="TalentSteenModel.Location" Width="1.5" PointX="0.75" PointY="19.625" />
+        <EntityTypeShape EntityType="TalentSteenModel.MaritalStatus" Width="1.5" PointX="3.75" PointY="37.375" />
+        <EntityTypeShape EntityType="TalentSteenModel.Recruiter" Width="1.5" PointX="3" PointY="1.625" />
+        <EntityTypeShape EntityType="TalentSteenModel.RecruiterFunctionalAreas" Width="1.5" PointX="5.25" PointY="3.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.RecruiterIndustries" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.RecruiterMembershipLevel" Width="1.5" PointX="0.75" PointY="17.125" />
+        <EntityTypeShape EntityType="TalentSteenModel.RecruiterPreferredLocations" Width="1.5" PointX="8.25" PointY="0.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.RecruiterStatus" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.RecruiterUser" Width="1.5" PointX="8.25" PointY="3.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.SearchTagMaster" Width="1.5" PointX="6" PointY="15" />
+        <EntityTypeShape EntityType="TalentSteenModel.States" Width="1.5" PointX="3" PointY="28.25" />
+        <EntityTypeShape EntityType="TalentSteenModel.UserDetails" Width="1.5" PointX="7.5" PointY="18" />
+        <EntityTypeShape EntityType="TalentSteenModel.Users" Width="1.5" PointX="6" PointY="31.625" />
+        <EntityTypeShape EntityType="TalentSteenModel.UserStatus" Width="1.5" PointX="3.75" PointY="32.375" />
+        <EntityTypeShape EntityType="TalentSteenModel.UserType" Width="1.5" PointX="3.75" PointY="34.75" />
+        <AssociationConnector Association="TalentSteenModel.FK_Employer_Country" />
+        <AssociationConnector Association="TalentSteenModel.FK_Recruiter_Country" />
+        <AssociationConnector Association="TalentSteenModel.FK_States_States" />
+        <AssociationConnector Association="TalentSteenModel.FK_UserDetails_Country" />
+        <AssociationConnector Association="TalentSteenModel.FK_CVCertification_Location" />
+        <AssociationConnector Association="TalentSteenModel.FK_CVExperience_FunctionalArea" />
+        <AssociationConnector Association="TalentSteenModel.FK_CVExperience_IndustryType" />
+        <AssociationConnector Association="TalentSteenModel.FK_CVExperience_Location" />
+        <AssociationConnector Association="TalentSteenModel.FK_CVSearchTag_SearchTagMaster" />
+        <AssociationConnector Association="TalentSteenModel.FK_Employer_EmployerMembershipLevel" />
+        <AssociationConnector Association="TalentSteenModel.FK_Employer_EmployerStatus" />
+        <AssociationConnector Association="TalentSteenModel.FK_EmployerUser_Employer" />
+        <AssociationConnector Association="TalentSteenModel.FK_EmployerUser_Users" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterFunctionalAreas_FunctionalArea" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterIndustries_IndustryType" />
+        <AssociationConnector Association="TalentSteenModel.FK_Recruiter_Location" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterPreferredLocations_Location" />
+        <AssociationConnector Association="TalentSteenModel.FK_Recruiter_RecruiterMembershipLevel" />
+        <AssociationConnector Association="TalentSteenModel.FK_Recruiter_RecruiterStatus" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterFunctionalAreas_Recruiter" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterIndustries_Recruiter" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterPreferredLocations_Recruiter" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterUser_Recruiter" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterUser_Users" />
+        <AssociationConnector Association="TalentSteenModel.FK_UserDetails_States" />
+        <AssociationConnector Association="TalentSteenModel.FK_UserDetails_Users" />
+        <AssociationConnector Association="TalentSteenModel.FK_Users_UserStatus" />
+        <AssociationConnector Association="TalentSteenModel.FK_Users_UserType" />
+        <EntityTypeShape EntityType="TalentSteenModel.RecruiterBankDetails" Width="1.5" PointX="5.25" PointY="22.5" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterBankDetails_Recruiter" />
+        <EntityTypeShape EntityType="TalentSteenModel.CVStatus" Width="1.5" PointX="10.375" PointY="0.875" />
+        <EntityTypeShape EntityType="TalentSteenModel.JobFunction" Width="1.5" PointX="10.375" PointY="3.875" />
+        <AssociationConnector Association="TalentSteenModel.FK_Employer_IndustryType" />
+        <EntityTypeShape EntityType="TalentSteenModel.CV" Width="1.5" PointX="14.25" PointY="13.625" />
+        <AssociationConnector Association="TalentSteenModel.FK_CV_Country" />
+        <AssociationConnector Association="TalentSteenModel.FK_CV_Gender" />
+        <AssociationConnector Association="TalentSteenModel.FK_CV_MaritalStatus" />
+        <AssociationConnector Association="TalentSteenModel.FK_CV_Recruiter" />
+        <AssociationConnector Association="TalentSteenModel.FK_CV_Users" />
+        <AssociationConnector Association="TalentSteenModel.FK_CV_Users1" />
+        <AssociationConnector Association="TalentSteenModel.FK_CVCertification_CV" />
+        <AssociationConnector Association="TalentSteenModel.FK_CVExperience_CV" />
+        <AssociationConnector Association="TalentSteenModel.FK_CVSearchTag_CV" />
+        <EntityTypeShape EntityType="TalentSteenModel.RecruiterJob" Width="1.5" PointX="16.5" PointY="18.25" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterJob_Recruiter" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterJob_Users" />
+        <EntityTypeShape EntityType="TalentSteenModel.EducationMajorMaster" Width="1.5" PointX="5.375" PointY="6.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.EducationMaster" Width="1.5" PointX="5.375" PointY="9.75" />
+        <EntityTypeShape EntityType="TalentSteenModel.CertificationMaster" Width="1.5" PointX="14.375" PointY="11.125" />
+        <EntityTypeShape EntityType="TalentSteenModel.JobSearchTag" Width="1.5" PointX="18.875" PointY="13.875" />
+        <AssociationConnector Association="TalentSteenModel.FK_JobSearchTag_SearchTagMaster" />
+        <EntityTypeShape EntityType="TalentSteenModel.City" Width="1.5" PointX="7.5" PointY="40.5" />
+        <EntityTypeShape EntityType="TalentSteenModel.District" Width="1.5" PointX="5.25" PointY="40.25" />
+        <AssociationConnector Association="TalentSteenModel.FK_City_District" />
+        <AssociationConnector Association="TalentSteenModel.FK_District_States" />
+        <AssociationConnector Association="TalentSteenModel.FK_UserDetails_District" />
+        <EntityTypeShape EntityType="TalentSteenModel.Jobs" Width="1.5" PointX="16.625" PointY="22.25" />
+        <AssociationConnector Association="TalentSteenModel.FK_Jobs_City" />
+        <AssociationConnector Association="TalentSteenModel.FK_Jobs_EducationMajorMaster" />
+        <AssociationConnector Association="TalentSteenModel.FK_Jobs_EducationMaster" />
+        <AssociationConnector Association="TalentSteenModel.FK_Jobs_Employer" />
+        <AssociationConnector Association="TalentSteenModel.FK_Jobs_EmploymentType" />
+        <AssociationConnector Association="TalentSteenModel.FK_Jobs_JobFunction" />
+        <AssociationConnector Association="TalentSteenModel.FK_Jobs_JobStatus" />
+        <AssociationConnector Association="TalentSteenModel.FK_JobSearchTag_Jobs" />
+        <AssociationConnector Association="TalentSteenModel.FK_RecruiterJob_Jobs" />
+        <EntityTypeShape EntityType="TalentSteenModel.JobCertifications" Width="1.5" PointX="18.875" PointY="19.625" />
+        <AssociationConnector Association="TalentSteenModel.FK_JobCertifications_CertificationMaster" />
+        <AssociationConnector Association="TalentSteenModel.FK_JobCertifications_Jobs" />
+        <EntityTypeShape EntityType="TalentSteenModel.JobCV" Width="1.5" PointX="21.875" PointY="17.75" />
+        <AssociationConnector Association="TalentSteenModel.FK_JobCV_CV" />
+        <AssociationConnector Association="TalentSteenModel.FK_JobCV_CVStatus" />
+        <AssociationConnector Association="TalentSteenModel.FK_JobCV_JobCV" />
+        <AssociationConnector Association="TalentSteenModel.FK_JobCV_Users" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
